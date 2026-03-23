@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pic-a-Booth 🎀</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+<div class="floaties" aria-hidden="true" id="floaties"></div>
+
+<div class="app-wrapper">
+
+    <header class="header">
+        <div class="header-badge">be ready!</div>
+        <h1 class="logo">Pic-a-<span>Booth</span></h1>
+        <p class="tagline">Strike a pose, cutiepie! 🎀</p>
+    </header>
+
+    <div class="booth-layout">
+
+        <div class="camera-panel">
+            <div class="camera-frame">
+                <video autoplay id="video"></video>
+                <div id="countdown-overlay"></div>
+                <div class="flash-overlay" id="flash-overlay"></div>
+                <div class="camera-corner tl">🌸</div>
+                <div class="camera-corner tr">⭐</div>
+                <div class="camera-corner bl">💫</div>
+                <div class="camera-corner br">🌸</div>
+            </div>
+
+            <div class="controls-card">
+
+                <div class="control-group pre-shoot-group" id="count-group">
+                    <span class="control-label">how many photos?</span>
+                    <div class="count-selector">
+                        <button class="count-btn" data-count="1">1<span class="sub">pic</span></button>
+                        <button class="count-btn active" data-count="2">2<span class="sub">pics</span></button>
+                        <button class="count-btn" data-count="3">3<span class="sub">pics</span></button>
+                        <button class="count-btn" data-count="4">4<span class="sub">pics</span></button>
+                    </div>
+                </div>
+
+                <div class="control-group template-group" id="template-group">
+                    <span class="control-label">pick your vibe!</span>
+                    <div class="template-grid" id="template-grid"></div>
+                </div>
+
+                <div class="control-group pre-shoot-group" id="timer-group">
+                    <span class="control-label"> countdown</span>
+                    <div class="timer-row">
+                        <button class="timer-opt active" data-sec="3">3s</button>
+                        <button class="timer-opt" data-sec="5">5s</button>
+                        <button class="timer-opt" data-sec="10">10s</button>
+                    </div>
+                </div>
+
+                <button class="capture-btn pre-shoot-group" id="capture-btn">
+                    <span class="btn-inner">
+                        <span id="btn-label">Say Cheese!</span>
+                    </span>
+                </button>
+
+                <button class="retake-btn" id="retake-btn">↩ Retake</button>
+
+            </div>
+        </div>
+
+        <div class="strip-panel">
+            <span class="strip-panel-label">your strip</span>
+            <div id="photos"></div>
+            <div class="progress-dots" id="progress-dots"></div>
+            <div id="download-container"></div>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
