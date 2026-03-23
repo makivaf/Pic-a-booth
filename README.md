@@ -16,6 +16,8 @@ A **kawaii-themed browser photobooth** that lets you take 1–4 photos, pick a c
 - **Custom Canva template support** — drop in your own PNG backgrounds
 
 ---
+## 🚀 Live Demo
+👉 https://makivaf.github.io/Pic-a-booth/
 
 ## 🚀 How to Run
 
