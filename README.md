@@ -17,20 +17,6 @@ A **kawaii-themed browser photobooth** that lets you take 1–4 photos, pick a c
 
 ---
 
-## 📁 File Structure
-
-```
-pic-a-booth/
-├── index.html              # App markup
-├── style.css               # All styles — kawaii theme, layout, animations
-├── script.js               # All logic — camera, capture, strip render, download
-└── template-*.png          # (Optional) Your custom Canva strip backgrounds
-```
-
-All three files must stay in the **same folder** to work correctly.
-
----
-
 ## 🚀 How to Run
 
 No build step or server needed.
